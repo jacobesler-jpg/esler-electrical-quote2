@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Esler Electrical | Request a Quote</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  max-width: 500px;
+  margin: 40px auto;
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 8px;
+}
+h1 {
+  text-align: center;
+}
+p {
+  text-align: center;
+  color: #555;
+}
+input, textarea, button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  font-size: 16px;
+}
+button {
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+footer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #777;
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+  <h1>Esler Electrical</h1>
+  <p>Request a Quote</p>
+
+  <form action="mailto:eslerelectrical@hotmail.com" method="post" enctype="text/plain">
+    <input type="text" name="Name" placeholder="Name" required>
+    <input type="email" name="Email" placeholder="Email" required>
+    <input type="tel" name="Phone" placeholder="Phone" required>
+    <textarea name="Job Details" placeholder="Job details" rows="5" required></textarea>
+    <button type="submit">Send Quote Request</button>
+  </form>
+
+  <footer>
+    © Esler Electrical – Geelong, Bellarine & Surf Coast
+  </footer>
+</div>
+</body>
+</html>
