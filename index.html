@@ -12,34 +12,32 @@ body {
   padding: 0;
 }
 .container {
-  max-width: 500px;
-  margin: 40px auto;
+  max-width: 400px;
+  margin: 80px auto;
   background: #ffffff;
-  padding: 25px;
-  border-radius: 8px;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
 }
 h1 {
-  text-align: center;
+  margin-bottom: 10px;
 }
 p {
-  text-align: center;
   color: #555;
+  margin-bottom: 30px;
 }
-input, textarea, button {
-  width: 100%;
-  padding: 12px;
-  margin-top: 10px;
-  font-size: 16px;
-}
-button {
-  background: black;
+a.button {
+  display: inline-block;
+  padding: 15px 25px;
+  background-color: black;
   color: white;
-  border: none;
-  border-radius: 4px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 18px;
 }
 footer {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 40px;
   font-size: 14px;
   color: #777;
 }
@@ -49,15 +47,9 @@ footer {
 <body>
 <div class="container">
   <h1>Esler Electrical</h1>
-  <p>Request a Quote</p>
+  <p>Click below to request a quote</p>
 
-  <form action="mailto:eslerelectrical@hotmail.com" method="post" enctype="text/plain">
-    <input type="text" name="Name" placeholder="Name" required>
-    <input type="email" name="Email" placeholder="Email" required>
-    <input type="tel" name="Phone" placeholder="Phone" required>
-    <textarea name="Job Details" placeholder="Job details" rows="5" required></textarea>
-    <button type="submit">Send Quote Request</button>
-  </form>
+  <a class="button" href="mailto:eslerelectrical@hotmail.com?subject=Quote Request">Request Quote</a>
 
   <footer>
     © Esler Electrical – Geelong, Bellarine & Surf Coast
